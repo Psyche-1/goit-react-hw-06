@@ -1,4 +1,14 @@
-export default function Contact({ contact, handleClickDelete }) {
+import { useDispatch } from "react-redux"
+import { deleteContact } from "../../redux/contactsSlice"
+
+export default function Contact({ contact }) {
+    const dispatch = useDispatch()
+    
+    const handleClickDelete = (id) => {
+    dispatch(deleteContact(id))
+    // setContact(contacts.filter(contact => contact.id !== id))
+    }
+
     return (
         <>
             <p>{ contact.name }</p>

@@ -18,6 +18,7 @@ const slice = createSlice({
       //     contact.name.toLowerCase().includes(action.payload.trim().toLowerCase())
       //   );
       state.filters.name = action.payload;
+      // console.log(action.payload);
     },
   },
 });
