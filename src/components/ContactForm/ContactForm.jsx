@@ -31,7 +31,7 @@ export default function ContactForm( ) {
     dispatch(addContact(newContact))
       actions.resetForm();
       
-      console.log(newContact);
+    //   console.log(newContact);
   };
     
     return (
